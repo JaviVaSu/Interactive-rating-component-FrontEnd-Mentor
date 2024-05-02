@@ -1,0 +1,169 @@
+:root{
+    /*Colores primarios*/
+    --Orange: hsl(25, 97%, 53%);
+    /*Colores neutrales*/
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 80%;
+}
+
+@media (min-width: 400px) {
+    .contenedor{
+        max-width: 37rem;
+    }
+}
+
+.estrella{
+    margin-left: 1.5rem;
+}
+
+.textos h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1;
+}
+
+@media (min-width: 400px) {
+    .textos h1{
+        font-size: 4rem;
+    }
+}
+
+.textos p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+}
+
+@media (min-width: 400px) {
+    .textos p{
+        font-size: 1.8rem;
+    }
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opciones button{
+    border: none;
+    border-radius: 50%;
+    width: 4rem;
+    background-color: transparent;
+    color: var(--Light-Grey);
+    aspect-ratio: 1/1;
+    font-family: "Overpass", sans-serif;
+}
+
+.opciones button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.contenedor-btn{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.contenedor-btn button{
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    padding: 1.5rem 0rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 400;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 1.6rem;
+}
+
+.contenedor-btn button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.contenedor-oculto{
+    width: 80%;
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .contenedor-oculto{
+        max-width: 37rem;
+    }
+}
+
+.imagen1{
+    width: 100%;
+}
+
+.imagen1 img{
+    display: block;
+    margin: auto;
+}
+
+.seleccionado p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--Orange);
+    text-align: center;
+}
+
+.agradecimiento h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1;
+    text-align: center;
+}
+
+.agradecimiento p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+    text-align: center;
+}
